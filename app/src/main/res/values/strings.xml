@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Happy 18</string>
+    <string name="javierName">Javier</string>
+    <string name="rebecaName">Rebeca</string>
+    <string name="lorem_ipsum">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget diam dictum, vulputate metus quis, suscipit elit. Quisque vel quam congue, accumsan est quis, mollis urna. Morbi et fermentum nibh. Nam porttitor lectus lorem, at ullamcorper leo sagittis at. Fusce et maximus libero, ut tristique orci. Sed et leo ac purus ultricies sollicitudin fermentum sed nisl. Praesent at justo arcu. Duis ac ornare quam. In vehicula quis arcu vitae placerat. Suspendisse condimentum massa lectus, at suscipit lorem auctor ut. Nulla a est ut ante sollicitudin tempor. Morbi eu urna pellentesque, sollicitudin magna non, efficitur metus. Nunc urna nisi, fringilla nec egestas a, vestibulum et ex. Duis aliquet volutpat placerat. Suspendisse in mollis massa. Aliquam erat volutpat.  "</string>
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <View
+        android:id="@+id/backgroundRebeca"
+        app:layout_constraintBottom_toTopOf="@id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ultraSoftBackgrounRebeca"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rebecaCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        app:cardElevation="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/halfLineHorizontal"
+        app:layout_constraintEnd_toStartOf="@id/halfLineVertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivRebecaProfile"
+            android:layout_width="@dimen/dimenChoosePicture"
+            android:layout_height="@dimen/dimenChoosePicture"
+            android:src="@mipmap/iv_rebeca"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/rebecaBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="girl"
+        android:textSize="32sp"
+        android:elevation="1dp"
+
+        android:textColor="@color/colorAccentRebeca"
+        android:backgroundTint="@color/colorBackgroundRebeca"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/halfLineHorizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/halfLineVertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/halfLineVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="208dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/halfLineHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="365dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:id="@+id/backgroundJavier"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ultraSoftBackgrounJavier"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/javierCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="8dp"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        app:cardElevation="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/halfLineVertical"
+        app:layout_constraintTop_toBottomOf="@id/halfLineHorizontal">
+
+        <ImageView
+            android:id="@+id/ivJavierProfile"
+            android:layout_width="@dimen/dimenChoosePicture"
+            android:layout_height="@dimen/dimenChoosePicture"
+            android:src="@mipmap/iv_javier_round" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/javierBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="1dp"
+        android:text="boy"
+        android:textSize="32dp"
+        android:textColor="@color/colorAccentJavier"
+
+        android:backgroundTint="@color/colorBackgroundJavier"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/halfLineVertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/halfLineHorizontal" />
+
+
+
+  <!--  <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/app_name"
+        android:textAlignment="textEnd"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+
+
+    <!--<androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="69dp" />
+
+
+    <Button
+        android:id="@+id/rebecaBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineDown"
+        app:layout_constraintEnd_toStartOf="@id/javierBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineUp" />
+
+    <Button
+        android:id="@+id/javierBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_margin="16dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineDown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rebecaBtn"
+        app:layout_constraintTop_toBottomOf="@id/guidelineUp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="240dp" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

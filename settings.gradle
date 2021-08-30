@@ -1,0 +1,2 @@
+rootProject.name = "FamilyDashboard"
+include ':app'
